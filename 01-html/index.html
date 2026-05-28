@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeira Pagina Do FullStack</title>
+      <!-- Favicon (ícone na aba) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <!-- Aqui termina o cabeçalho da pagina -->
+
+  <!-- Aqui começa o corpo da pagina -->
+  <body>
+    <!-- Primeiro teste -->
+    <h1>Olá, Mundo!</h1>
+    <p>Minha pagina no estudo ao Rumo do FullStack, relebrando coisas.</p>
+
+    <img src="foto.png" alt="descrição" />
+    <br />
+    <!-- Atributos = informações extras dentro da tag de abertura. src, alt, href, type, class, id são exemplos de atributos. -->
+
+    <!-- Titulos -->
+    <h1>Titulo Principal da Pagina</h1>
+    <h2>Seção</h2>
+    <h3>Subseção</h3>
+    <h4>Sub-subseção</h4>
+    <h5>raramente usado</h5>
+    <h6>Praticamente nunca usado</h6>
+    <!-- Regra de ouro do mercado: <h1> só uma vez por página (o título principal) -->
+
+    <!-- Textos -->
+    <p>Pragrafo - use para blocos de texto.</p>
+
+    <span> Trecho em linha - use para estilizar parte de um texto.</span>
+
+    <p>Eu tenho um <strong>texto importante</strong> aqui.</p>
+    <p>Eu tenho um <em>texto importante</em> aqui.</p>
+
+    <b>Negrito visual apenas</b>
+    <i>Itálico visual apenas</i>
+    <strong>Negrito + importância semântica</strong>
+    <em>Italico + ênfase semântica</em>
+    <!-- Prefira os 2 ultimos -->
+
+    <!-- Links -->
+    <a href="https://google.com">Ir para o google</a>
+    <br />
+    <a href="https://google.com" target="_blank" rel="noopner noreferrer"
+      >Ir para o google</a
+    >
+    <br />
+
+    <!-- Link para uma seção da mesma página -->
+    <a href="#sobre">Ir para Sobre</a>
+    <section id="sobre">...</section>
+
+    <!-- Imagem na mesma pasta -->
+    <img src="foto.jpg" alt="Foto do perfil de João" />
+
+    <!-- Imagem em subpasta -->
+    <img src="imagens/banner.png" alt="Banner do site" />
+
+    <!-- Imagem externa (URL) -->
+    <img src="https://site.com/imagem.jpg" alt="Descrição" />
+
+    <!-- Com largura e altura (evita "layout shift" — o site "pular" ao carregar) -->
+    <img src="foto.jpg" alt="Foto" width="300" height="200" />
+    <!-- O atributo alt é obrigatório moralmente (e importante para SEO): -->
+
+    <!-- Lista não ordenada (bolinhas) -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- Lista ordenada (números) -->
+    <ol>
+      <li>Acordar</li>
+      <li>Tomar café</li>
+      <li>Codar</li>
+    </ol>
+
+    <table>
+      <thead>
+        <!-- Cabeçalho da tabela -->
+        <tr>
+          <!-- tr = table row (linha) -->
+          <th>Nome</th>
+          <!-- th = table header (cabeçalho) -->
+          <th>Linguagem</th>
+          <th>Nível</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Corpo da tabela -->
+        <tr>
+          <td>João</td>
+          <!-- td = table data (dado) -->
+          <td>JavaScript</td>
+          <td>Iniciante</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>Python</td>
+          <td>Avançado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Rodapé da tabela (opcional) -->
+        <tr>
+          <td colspan="3">Total: 2 desenvolvedores</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br />
+    <form action="/enviar" method="post">
+      <!-- Label + Input sempre juntos — acessibilidade -->
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Seu nome"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="seu@email.com"
+        required
+      />
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" />
+
+      <!-- Área de texto grande -->
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+      <!-- Seleção -->
+      <label for="nivel">Nível:</label>
+      <select id="nivel" name="nivel">
+        <option value="">Selecione</option>
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+      </select>
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="termos" name="termos" />
+      <label for="termos">Aceito os termos</label>
+
+      <!-- Botão de envio -->
+      <button type="submit">Enviar</button>
+    </form>
+    <!--  Por que for no label e id no input iguais? Quando você clica no texto "Nome:", o cursor vai automaticamente para o campo. Isso é acessibilidade e boa prática. -->
+
+    <!-- Tags Semânticas -->
+    <header>
+      <!-- Cabeçalho da página ou de uma seção -->
+      <!-- Geralmente contém logo, título, nav -->
+    </header>
+
+    <nav>
+      <!-- Menu de navegação — links principais -->
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+    </nav>
+
+    <main>
+      <!-- Conteúdo principal da página -->
+      <!-- Use UMA VEZ por página -->
+
+      <article>
+        <!-- Conteúdo independente (post, notícia, card) -->
+        <!-- Pode existir sozinho, sem contexto do site -->
+        <h2>Título do artigo</h2>
+        <p>Texto do artigo...</p>
+      </article>
+
+      <section>
+        <!-- Seção temática da página -->
+        <!-- Agrupa conteúdo relacionado -->
+        <h2>Nossos Serviços</h2>
+        <!-- cards de serviços aqui -->
+      </section>
+
+      <aside>
+        <!-- Conteúdo lateral, relacionado mas não principal -->
+        <!-- Barra lateral, anúncios, links relacionados -->
+      </aside>
+    </main>
+
+    <footer>
+      <!-- Rodapé — copyright, links legais, contato -->
+    </footer>
+  </body>
+</html>
+<!-- Fim do corpo da pagina -->
