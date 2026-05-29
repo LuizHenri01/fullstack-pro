@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/02-css/cardproduto.css" />
+    <!-- IMPORTANDO A FONTE DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Card</title>
+  </head>
+  <body>
+    <!-- o article representa conteúdo independente e reutilizavel. -->
+    <article class="card">
+      <div class="card_imagem_div">
+        <img
+          class="card_imagem"
+          src="/img/kaneki.png"
+          alt="Walpaper do Personagem Kaneki"
+        />
+
+        <!-- Card de Desconto do item -->
+        <div class="card_badge">-35% OFF</div>
+        <!-- aria-label explica o que o botão faz para leitores de tela. -->
+        <button
+          class="card_favorito"
+          aria-label="Adicionar às favoritas"
+          type="button"
+        >
+          🤍
+        </button>
+      </div>
+      <!-- Conteúdo do card -->
+      <div class="card_conteudo">
+        <span class="card_categoria">Eletrônicos · Áudio</span>
+
+        <h2 class="card_nome">Fone Premium ANC Pro</h2>
+
+        <div class="card_avaliacao">
+          <!-- aria-hidden="true" esconde as estrelas dos leitores de tela. -->
+          <span class="card_estrelas" aria-hidden="true">★★★★★</span>
+          <span class="card_nota">4.9 (2.341 avaliações)</span>
+        </div>
+
+        <div class="card_preco">
+          <span class="card__preco-atual">R$ 649</span>
+          <span class="card__preco-antigo">R$ 999</span>
+        </div>
+        <!-- <hr> é um elemento semântico para divisão temática. Semanticamente correto aqui — separa o preço das informações de entrega -->
+        <hr class="card__divisor" />
+
+        <div class="card__info-extra">
+          <span class="card__entrega">
+            <span>🚚</span>
+            <span>Grátis em 2 dias</span>
+          </span>
+          <span class="card__estoque">
+            <span>🟢</span>
+            <span>Em estoque</span>
+          </span>
+        </div>
+
+        <button class="card__btn" type="button">
+          <span>🛒</span>
+          Adicionar ao Carrinho
+        </button>
+      </div>
+    </article>
+  </body>
+</html>
