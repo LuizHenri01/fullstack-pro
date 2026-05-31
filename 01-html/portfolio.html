@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Estudante de Ciência da Computação</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../02-css/portfolio.css" />
+  </head>
+  <body>
+    <header class="cabecalho-principal" id="topo">
+      <h1>Portfólio de Estudante de Ciência da Computação</h1>
+      <p>
+        Olá! Sou estudante de Ciência da Computação e apresento minhas
+        competências, ferramentas e linguagens favoritas.
+      </p>
+      <nav class="menu-principal" aria-label="Menu do portfólio">
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main class="conteudo-principal">
+      <section class="secao" id="sobre">
+        <header>
+          <h2 class="titulo-secao">Sobre mim</h2>
+        </header>
+        <p>
+          Sou estudante de Ciência da Computação com gosto por programação,
+          lógica e tecnologias modernas. Meu objetivo é construir soluções
+          elegantes e aprender cada vez mais no caminho.
+        </p>
+      </section>
+
+      <section class="secao" id="competencias">
+        <header>
+          <h2 class="titulo-secao">Competências</h2>
+        </header>
+
+        <div class="cartao-lista">
+          <button class="cartao botao-selecao ativo" type="button" data-alvo="painel-habilidades">
+            <i class="bi bi-lightning-charge-fill me-2"></i>Habilidades
+          </button>
+          <button class="cartao botao-selecao" type="button" data-alvo="painel-ferramentas">
+            <i class="bi bi-tools me-2"></i>Ferramentas
+          </button>
+          <button class="cartao botao-selecao" type="button" data-alvo="painel-linguagens">
+            <i class="bi bi-code-slash me-2"></i>Linguagens
+          </button>
+        </div>
+
+        <div class="painel-secoes" aria-live="polite">
+          <article class="painel-item ativo" id="painel-habilidades">
+            <h3>Habilidades</h3>
+            <ul class="lista-competencias">
+              <li>Raciocínio lógico</li>
+              <li>Resolução de problemas</li>
+              <li>Trabalho em equipe</li>
+              <li>Aprendizado contínuo</li>
+            </ul>
+          </article>
+
+          <article class="painel-item" id="painel-ferramentas">
+            <h3>Ferramentas</h3>
+            <ul class="lista-competencias">
+              <li>Git</li>
+              <li>Visual Studio Code</li>
+              <li>DevTools</li>
+              <li>Terminal</li>
+            </ul>
+          </article>
+
+          <article class="painel-item" id="painel-linguagens">
+            <h3>Linguagens</h3>
+            <ul class="lista-competencias">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="secao" id="contato">
+        <header>
+          <h2 class="titulo-secao">Contato</h2>
+        </header>
+        <div class="contato">
+          <p>
+            Estou aberto a novas oportunidades de aprendizado e novos projetos.
+            Se quiser conversar, envie uma mensagem para:
+          </p>
+          <p><strong>Email:</strong> seu-email@exemplo.com</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/seu-perfil</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Portfólio criado com HTML semântico para apresentar minhas habilidades.</p>
+    </footer>
+    <script src="../03-javascript/portfolio.js"></script>
+  </body>
+</html>

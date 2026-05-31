@@ -1,0 +1,62 @@
+*,*::before *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 48px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(37, 99, 235, 0.12);
+      width: 300px;
+    }
+    .titulo { font-size: 18px; color: #64748b; margin-bottom: 24px; }
+    .numero {
+      font-size: 72px;
+      font-weight: 700;
+      color: #2563eb;
+      line-height: 1;
+      margin-bottom: 32px;
+      transition: transform 0.1s ease;
+    }
+    .numero.pulsar { transform: scale(1.2); }
+    .botoes { display: flex; gap: 12px; justify-content: center; }
+    .btn {
+      width: 52px;
+      height: 52px;
+      border: none;
+      border-radius: 12px;
+      font-size: 24px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.1s ease;
+    }
+    .btn:active { transform: scale(0.9); }
+    .btn-diminuir { background: #fee2e2; color: #dc2626; }
+    .btn-zerar { background: #f1f5f9; color: #64748b; font-size: 14px; }
+    .btn-aumentar { background: #dbeafe; color: #2563eb; }
+    .mensagem {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #64748b;
+      height: 20px;
+    }
