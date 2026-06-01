@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="/02-css/aplicativotarefas.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Minhas Tarefas</h1>
+    <p class="contadores" id="contadores">0 tarefas</p>
+
+    <form class="form-adicionar" id="form">
+      <input
+        type="text"
+        id="input-tarefa"
+        placeholder="Nova tarefa..."
+        autocomplete="off"
+        maxlength="100"
+      >
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filtros">
+      <button class="filtro ativo" data-filtro="todas">Todas</button>
+      <button class="filtro" data-filtro="pendentes">Pendentes</button>
+      <button class="filtro" data-filtro="concluidas">Concluídas</button>
+    </div>
+
+    <ul class="lista" id="lista">
+      <li class="vazio">Nenhuma tarefa ainda. Adicione uma!</li>
+    </ul>
+  </div>
+
+  <script src="/03-javascript/aplicativotarefas.js"></script>
+</body>
+</html>
